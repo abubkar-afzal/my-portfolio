@@ -2,7 +2,7 @@ import React, { useState } from "react"
 const Navbar = () => {
     const [show, setShow] = useState(false);
     return <>
-    <div className="fixed z-10" onClick={()=>{setShow(!show)}}>
+    <div className="fixed z-20 text-red-800" onClick={()=>{setShow(!show)}}>
                 Icon
             </div>
         <div className={`bg-(--gray) text-(--white) w-[70vw] h-screen pt-[1rem] fixed ${show ? "left-0":"left-[-100vw]"} duration-[1s]`}>
