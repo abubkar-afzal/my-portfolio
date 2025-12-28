@@ -4,6 +4,9 @@
   --white: #ffffff;
   --black: #000000;
   --gray: #2d2d2d;
+  --mahroon: #8e1414;
+  --yellow: #eddb1a;
+  --green: #00f953;
 
 }
 @theme {
@@ -15,4 +18,7 @@
   --breakpoint-ll: 1440px;
   --breakpoint-k: 2560px;
   --breakpoint-my: 2700px;
+}
+body{
+  background-color: #000000;
 }
