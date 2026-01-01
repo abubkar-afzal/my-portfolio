@@ -9,10 +9,10 @@ import { DiVim } from "react-icons/di";
 const Navbar = () => {
     const [show, setShow] = useState(false);
     return <>
-        <div className={`px-2 w-[70vw] h-10 fixed z-50 text-(--white) border-(--black)`} onClick={() => { setShow(!show) }}>
+        <div className={`px-2 w-[70vw] fixed z-999 text-(--white) border-(--black) h-7`} onClick={() => { setShow(!show) }}>
             {show ? <RxCross2 className={`w-6 h-6`} /> : <MdOutlineMenu className="w-6 h-6" />}
         </div>
-        <div className={`bg-(--gray) text-(--white) w-[70vw] h-screen pt-[1rem] fixed ${show ? "left-0" : "left-[-100vw]"} duration-[1s]`}>
+        <div className={`bg-(--gray) text-(--white) w-[70vw] h-screen pt-[1rem] fixed ${show ? "left-0" : "left-[-100vw]"} duration-[1s] overflow-y-scroll`}>
 
             <div className="flex flex-col my-2 space-y-[2rem] items-center text-center text-wrap">
                 <div className="flex flex-col items-center">
