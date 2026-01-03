@@ -19,7 +19,7 @@ const FirstPage = () => {
                                 d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"
                             />
                         </defs>
-                        <text className="fill-black dark:fill-white font-mono text-3rem uppercase tracking-[0.2em]">
+                        <text className="fill-white dark:fill-white font-mono text-3rem uppercase tracking-[0.2em]">
                             <textPath xlinkHref="#circlePath">
                                 Full Stack Developer  
                             </textPath>

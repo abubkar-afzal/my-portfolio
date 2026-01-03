@@ -7,6 +7,7 @@ import CodingSkill from "./Components/codingSkills";
 import DesignSkills from "./Components/designSkills";
 import Awards from "./Components/awards";
 import Services from "./Components/services";
+import GetInTouch from "./Components/getintouch";
 export default function Home() {
   return (
     <>
@@ -18,6 +19,7 @@ export default function Home() {
     <DesignSkills/>
     <Awards/>
     <Services/>
+    <GetInTouch/>
     </>
   );
 }
