@@ -20,28 +20,26 @@ const GetInTouch=()=>{
             <div><div className="font-thin text-[12px]">Phone</div>
             <div className="font-black text-[14px]">+923270972423</div></div>
         </div>
-        <div className="text-(--white)">
+        <div className="text-(--white) grid grid-cols-2 md:grid-cols-3 gap-8 text-center m-2 mt-[2rem]">
             <div>
-                <div>name</div>
-                <input type="text" />
+                <div className="font-black my-4">Name</div>
+                <input type="text" className="border-b p-0 text-center font-thin"/>
             </div>
             <div>
-                <div>email</div>
-                <input type="text" />
-            </div>
-            <div>
-                <div>subject</div>
-                <input type="text" />
-            </div>
-            <div>
-                <div>message</div>
-                <input type="text" />
+                <div className="font-black my-4">Email</div>
+                <input type="text" className="border-b p-0 text-center font-thin"/>
+            </div><div>
+                <div className="font-black my-4">Subject</div>
+                <input type="text" className="border-b p-0 text-center font-thin"/>
+            </div><div>
+                <div className="font-black my-4">Message</div>
+                <input type="text" className="border-b p-0 text-center font-thin"/>
             </div>
         </div>
-        <div>
-            <button>Submit</button>
+        <div className="text-(--white) text-center">
+            <button className="my-[1rem] rounded-[1.2rem] bg-(--blue) p-2 px-[2rem] font-black">Submit</button>
         </div>
-        <div>Location</div>
+        <div className="text-(--white) py-[1rem] bg-(--gray) text-[10px] text-center font-thin">&copy; 2026 | All Rights Reserved by <b>Hafiz Abubakar Afzal</b></div>
     </>
 }
 export default GetInTouch;
