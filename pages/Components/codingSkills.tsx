@@ -17,10 +17,10 @@ const CodingSkill = ()=>{
   ];
     return<>
     <div className="text-[1.5rem] font-black text-left m-2 relative -z-10 text-(--white)">
-            <div className="w-[60%]">Coding Skills .</div>
-            <div className="border-t absolute right-0 bottom-2 w-[42%]"></div>
+            <div className="w-[60%] l:w-[28%] l:text-right l:text-[2.2rem]">Coding Skills .</div>
+            <div className="border-t absolute right-0 bottom-2 w-[42%] l:w-[70%]"></div>
           </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-10 mt-[5rem]">
+        <div className="grid grid-cols-2 l:grid-cols-4 gap-10 mt-[5rem] l:mx-[1rem]">
         {stats.map((s) => (
           <ProgressCircle 
             key={s.label}
@@ -28,7 +28,7 @@ const CodingSkill = ()=>{
             percentage={s.pc}
             color={s.color}
             // You can pass any Tailwind size class here!
-            sizeClass="w-28 h-28 md:w-48 md:h-48" 
+            sizeClass="w-28 h-28 l:w-38 l:h-38" 
           />
         ))}
       </div>

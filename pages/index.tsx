@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <>
     <Navbar/>
+    <div className="w-full l:w-[80vw] l:ml-auto">
     <FirstPage/>
     <About/>
     <Education_Experience/>
@@ -19,7 +20,7 @@ export default function Home() {
     <DesignSkills/>
     <Awards/>
     <Services/>
-    <GetInTouch/>
+    <GetInTouch/></div>
     </>
   );
 }

@@ -4,12 +4,12 @@ import img from "../../public/img1.jpg";
 const DesignSkills = () => {
   return (
     <>
-      <div className="my-[2rem] text-[1.5rem] font-black text-left m-2 relative -z-10 text-(--white)">
-        <div className="w-[60%]">Design Skills .</div>
-        <div className="border-t absolute right-0 bottom-2 w-[42%]"></div>
-      </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center m-2">
-        <div className="text-(--white) flex w-[10rem] bg-(--lightpink) rounded-[2rem] border border-(--pink)">
+      <div className="l:my-[2rem] text-[1.5rem] font-black text-left m-2 relative -z-10 text-(--white)">
+            <div className="w-[60%] l:w-[28%] l:text-right l:text-[2.2rem]">Design Skills .</div>
+            <div className="border-t absolute right-0 bottom-2 w-[42%] l:w-[70%]"></div>
+          </div>
+      <div className="grid grid-cols-2 l:grid-cols-4 gap-8 text-center m-2 l:ml-[4rem]">
+        <div className="text-(--white) flex w-[10rem] bg-(--lightpink) rounded-[2rem] border border-(--pink) cursor-pointer hover:scale-[1.06] duration-[1s]">
           <div>
             <Image
               src={img}
@@ -24,7 +24,7 @@ const DesignSkills = () => {
             <div className="font-thin text-[10px]">HTML / Tailwindcss</div>
           </div>
         </div>
-        <div className="text-(--white) flex w-[10rem] bg-(--lightgreen) rounded-[2rem] border border-(--green)">
+        <div className="text-(--white) flex w-[10rem] bg-(--lightgreen) rounded-[2rem] border border-(--green) cursor-pointer hover:scale-[1.06] duration-[1s]">
           <div>
             <Image
               src={img}
@@ -39,7 +39,7 @@ const DesignSkills = () => {
             <div className="font-thin text-[10px]">Corel Draw</div>
           </div>
         </div>
-        <div className="text-(--white) flex w-[10rem] bg-(--lightmahroon) rounded-[2rem] border border-(--mahroon)">
+        <div className="text-(--white) flex w-[10rem] bg-(--lightmahroon) rounded-[2rem] border border-(--mahroon) cursor-pointer hover:scale-[1.06] duration-[1s]">
           <div>
             <Image
               src={img}
@@ -54,7 +54,7 @@ const DesignSkills = () => {
             <div className="font-thin text-[10px]">Figma</div>
           </div>
         </div>
-        <div className="text-(--white) flex w-[10rem] bg-(--lightblue) rounded-[2rem] border border-(--blue)">
+        <div className="text-(--white) flex w-[10rem] bg-(--lightblue) rounded-[2rem] border border-(--blue) cursor-pointer hover:scale-[1.06] duration-[1s]">
           <div>
             <Image
               src={img}
@@ -69,7 +69,7 @@ const DesignSkills = () => {
             <div className="font-thin text-[10px]">PhotoShope</div>
           </div>
         </div>
-        <div className="text-(--white) flex w-[10rem] bg-(--lightyellow) rounded-[2rem] border border-(--yellow)">
+        <div className="text-(--white) flex w-[10rem] bg-(--lightyellow) rounded-[2rem] border border-(--yellow) cursor-pointer hover:scale-[1.06] duration-[1s]">
           <div>
             <Image
               src={img}
