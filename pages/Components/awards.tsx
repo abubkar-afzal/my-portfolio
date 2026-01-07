@@ -4,15 +4,15 @@ import img from "../../public/img1.jpg";
 const Awards = () => {
   return (
     <>
-      <div className="l:my-[2rem] text-[1.5rem] font-black text-left m-2 relative -z-10 text-(--white)">
-        <div className="w-[60%] l:w-[26%] l:text-right l:text-[2.2rem]">
+      <div className="my-[2rem] text-[1.5rem] font-black text-left m-2 relative -z-10 text-(--white)">
+        <div className="w-[60vw] l:w-[26%] l:text-right l:text-[2.2rem]">
           Certificates .
         </div>
-        <div className="border-t absolute right-0 bottom-2 w-[42%] l:w-[72%]"></div>
+        <div className="border-t absolute right-0 bottom-2 w-[40vw] l:w-[73%]"></div>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mt-[2rem] m-2 l:ml-[4rem]">
 
-        <div className="group [perspective:1000px] w-[10rem] h-[11rem]">
+        <div className="group [perspective:1000px] w-[10rem] h-[11rem] cursor-pointer">
           <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
             {/* Front Face */}
             <div className="absolute inset-0 [backface-visibility:hidden] rounded-[1rem] bg-(--gray) text-(--white)">
@@ -40,7 +40,7 @@ const Awards = () => {
             </div>
           </div>
         </div>
-        <div className="group [perspective:1000px] w-[10rem] h-[11rem]">
+        <div className="group [perspective:1000px] w-[10rem] h-[11rem] cursor-pointer">
           <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
             {/* Front Face */}
             <div className="absolute inset-0 [backface-visibility:hidden] rounded-[1rem] bg-(--gray) text-(--white)">
@@ -67,7 +67,7 @@ const Awards = () => {
               <div className="text-sm font-light">More Info Coming Soon</div>
             </div>
           </div>
-        </div><div className="group [perspective:1000px] w-[10rem] h-[11rem]">
+        </div><div className="group [perspective:1000px] w-[10rem] h-[11rem] cursor-pointer">
           <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
             {/* Front Face */}
             <div className="absolute inset-0 [backface-visibility:hidden] rounded-[1rem] bg-(--gray) text-(--white)">
@@ -94,7 +94,7 @@ const Awards = () => {
               <div className="text-sm font-light">More Info Coming Soon</div>
             </div>
           </div>
-        </div><div className="group [perspective:1000px] w-[10rem] h-[11rem]">
+        </div><div className="group [perspective:1000px] w-[10rem] h-[11rem] cursor-pointer">
           <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
             {/* Front Face */}
             <div className="absolute inset-0 [backface-visibility:hidden] rounded-[1rem] bg-(--gray) text-(--white)">
@@ -121,7 +121,7 @@ const Awards = () => {
               <div className="text-sm font-light">More Info Coming Soon</div>
             </div>
           </div>
-        </div><div className="group [perspective:1000px] w-[10rem] h-[11rem]">
+        </div><div className="group [perspective:1000px] w-[10rem] h-[11rem] cursor-pointer">
           <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
             {/* Front Face */}
             <div className="absolute inset-0 [backface-visibility:hidden] rounded-[1rem] bg-(--gray) text-(--white)">

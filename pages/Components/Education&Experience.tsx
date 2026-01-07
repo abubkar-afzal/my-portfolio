@@ -7,7 +7,7 @@ const Education_Experience = () => {
         <div>
           <div className="text-[1.5rem] font-black text-left m-2 relative -z-10 l:mb-[2rem]">
             <div className="w-[50%] l:w-[46%] l:text-right l:text-[2.2rem]">Education .</div>
-            <div className="border-t absolute right-0 bottom-2 w-[55%] l:w-[52%]"></div>
+            <div className="border-t absolute right-0 bottom-2 w-[50vw] l:w-[53%]"></div>
           </div>
           <div className="flex l:ml-[3rem] group cursor-pointer">
             <div className="w-[5%] mr-[5%] h-[8rem] flex flex-col justify-center ">
@@ -61,8 +61,8 @@ const Education_Experience = () => {
         </div>
         <div>
           <div className="text-[1.5rem] font-black text-left m-2 relative -z-10 l:mb-[2rem]">
-            <div className="w-[50%] l:w-[46%] l:text-right l:text-[2.2rem]">Experience .</div>
-            <div className="border-t absolute right-0 bottom-2 w-[52%] l:w-[52%] "></div>
+            <div className="w-[50vw] l:w-[46%] l:text-right l:text-[2.2rem]">Experience .</div>
+            <div className="border-t absolute right-0 bottom-2 w-[50vw] l:w-[53%] "></div>
           </div>
           <div className="flex l:ml-[3rem] l:mr-[1rem] group cursor-pointer">
             <div className="w-[5%] mr-[5%] h-[8rem] flex flex-col justify-center ">

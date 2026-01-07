@@ -15,7 +15,7 @@
   --blue: #0064f9;
   --pink: #f900f1;
   --yellow: #f9ec00;
-
+  --transparent: #00000000;
 }
 @theme {
   --breakpoint-sm: 290px;
@@ -27,6 +27,13 @@
   --breakpoint-k: 2560px;
   --breakpoint-my: 2700px;
 }
-body{
+body {
   background-color: #000000;
+}
+.removescrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.removescrollbar::-webkit-scrollbar {
+  display: none;
 }
