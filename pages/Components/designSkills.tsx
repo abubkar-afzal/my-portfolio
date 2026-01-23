@@ -1,6 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import img from "../../public/img1.jpg";
+import img1 from "../../public/html.png";
+import img2 from "../../public/figma.png";
+import img3 from "../../public/corel.png";
+import img4 from "../../public/photoshop.png";
+import img5 from "../../public/snapseed.png";
 const DesignSkills = () => {
   return (
     <>
@@ -12,7 +16,7 @@ const DesignSkills = () => {
         <div className="text-(--white) flex w-[10rem] bg-(--lightpink) rounded-[2rem] border border-(--pink) cursor-pointer hover:scale-[1.06] duration-[1s]">
           <div>
             <Image
-              src={img}
+              src={img1}
               alt="image"
               width={50}
               height={50}
@@ -27,7 +31,7 @@ const DesignSkills = () => {
         <div className="text-(--white) flex w-[10rem] bg-(--lightgreen) rounded-[2rem] border border-(--green) cursor-pointer hover:scale-[1.06] duration-[1s]">
           <div>
             <Image
-              src={img}
+              src={img2}
               alt="image"
               width={50}
               height={50}
@@ -42,7 +46,7 @@ const DesignSkills = () => {
         <div className="text-(--white) flex w-[10rem] bg-(--lightmahroon) rounded-[2rem] border border-(--mahroon) cursor-pointer hover:scale-[1.06] duration-[1s]">
           <div>
             <Image
-              src={img}
+              src={img3}
               alt="image"
               width={50}
               height={50}
@@ -57,7 +61,7 @@ const DesignSkills = () => {
         <div className="text-(--white) flex w-[10rem] bg-(--lightblue) rounded-[2rem] border border-(--blue) cursor-pointer hover:scale-[1.06] duration-[1s]">
           <div>
             <Image
-              src={img}
+              src={img4}
               alt="image"
               width={50}
               height={50}
@@ -72,7 +76,7 @@ const DesignSkills = () => {
         <div className="text-(--white) flex w-[10rem] bg-(--lightyellow) rounded-[2rem] border border-(--yellow) cursor-pointer hover:scale-[1.06] duration-[1s]">
           <div>
             <Image
-              src={img}
+              src={img5}
               alt="image"
               width={50}
               height={50}

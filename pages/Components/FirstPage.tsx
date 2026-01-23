@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import img1 from "../../public/img1.jpg";
 import { motion } from "framer-motion";
+import Typewriter from 'typewriter-effect';
 const FirstPage = () => {
   return (
     <>
@@ -51,8 +52,16 @@ const FirstPage = () => {
               <div className="text-[1.6rem] l:text-[2rem] font-black">
                 Hafiz Abubkar Afzal
               </div>
-              <div className="text-[1rem] l:text-[1.2rem] font-thin text-(--mahroon)">
-                Full Stack Developer
+              <div className="text-[1rem] l:text-[1.3rem] font-black text-(--mahroon)">
+                <Typewriter
+        options={{
+          strings: ['Full Stack Developer', 'Graphic Designer', 'Hardware Expert'],
+          autoStart: true,
+          loop: true,
+          deleteSpeed: 50, 
+          delay: 75,       
+        }}
+      />
               </div>
               <div className="text-[1.1rem] l:text-[1.3rem] font-arial my-2">
                 I apperciate your trust greatly.
