@@ -12,7 +12,7 @@ const DesignSkills = () => {
             <div className="w-[60vw] l:w-[28%] l:text-right l:text-[2.2rem]">Design Skills .</div>
             <div className="border-t absolute right-0 bottom-2 w-[40vw] l:w-[71%]"></div>
           </div>
-      <div className="grid grid-cols-2 l:grid-cols-4 gap-8 text-center m-2 l:ml-[4rem]">
+      <div className="grid grid-cols-2 l:grid-cols-4 gap-8 text-center px-2 l:m-2 l:ml-[4rem]">
         <div className="text-(--white) flex w-[10rem] bg-(--lightpink) rounded-[2rem] border border-(--pink) cursor-pointer hover:scale-[1.06] duration-[1s]">
           <div>
             <Image

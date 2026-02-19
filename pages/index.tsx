@@ -11,7 +11,7 @@ import GetInTouch from "./Components/getintouch";
 import { FaArrowUp } from "react-icons/fa";
 import FadeInWhenVisible from "./Components/FadeInWhenVisible";
 import Work from "./Components/work";
-
+import BabylonBackground from "./Components/BabylonBackground";
 export default function Home() {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
@@ -30,6 +30,7 @@ export default function Home() {
 
   return (
     <>
+    <BabylonBackground />
       <Navbar />
       <div className="w-full l:w-[80vw] l:ml-auto mx-2 overflow-hidden">
         <div id="home">
