@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 import { BsEnvelopeAt, BsTelephoneOutbound, BsPerson, BsChatDots, BsCardText } from "react-icons/bs";
 
@@ -20,7 +21,7 @@ const GetInTouch = () => {
   };
 
   return (
-    <div className="bg-(--black) min-h-screen flex flex-col justify-between overflow-x-hidden">
+    <div className=" min-h-screen flex flex-col justify-between overflow-x-hidden">
       {/* Header */}
       <div className="my-[2rem] text-[1.5rem] font-black text-left m-2 relative text-(--white)">
         <div className="w-[60vw] l:w-[27%] l:text-right l:text-[2.2rem]">
@@ -36,7 +37,7 @@ const GetInTouch = () => {
 
         {/* Contact Cards */}
         <div className="l:flex l:my-[2rem] l:justify-between l:mx-[4rem] gap-4">
-          <div className="group text-(--white) flex items-center space-x-4 m-2 p-4 border border-(--gray) rounded-xl hover:border-(--blue) transition-all duration-500 flex-1">
+          <Link href="mailto:hafizabubakarafzal@gmail.com" className="group text-(--white) flex items-center space-x-4 m-2 p-4 border border-(--gray) rounded-xl hover:border-(--blue) transition-all duration-500 flex-1">
             <div className="bg-(--gray) p-3 rounded-lg group-hover:bg-(--blue) group-hover:text-(--black) transition-all">
               <BsEnvelopeAt size={24} />
             </div>
@@ -46,9 +47,9 @@ const GetInTouch = () => {
                 hafizabubakarafzal@gmail.com
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="group text-(--white) flex items-center space-x-4 m-2 p-4 border border-(--gray) rounded-xl hover:border-(--green) transition-all duration-500 flex-1">
+          <Link href="tel:+923270972423" className="group text-(--white) flex items-center space-x-4 m-2 p-4 border border-(--gray) rounded-xl hover:border-(--green) transition-all duration-500 flex-1">
             <div className="bg-(--gray) p-3 rounded-lg group-hover:bg-(--green) group-hover:text-(--black) transition-all">
               <BsTelephoneOutbound size={24} />
             </div>
@@ -56,7 +57,7 @@ const GetInTouch = () => {
               <div className="font-thin text-[12px] opacity-60">Phone</div>
               <div className="font-black text-[14px]">+923270972423</div>
             </div>
-          </div>
+          </Link>
         </div>
 
         {/* Form Section */}

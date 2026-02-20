@@ -52,7 +52,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="bg-(--black) min-h-screen p-4 overflow-x-hidden">
+    <div className=" min-h-screen p-4 overflow-x-hidden">
       {/* Header Section - Removed -z-10 so it's visible */}
       <div className="my-[2rem] text-[1.5rem] font-black text-left m-2 relative text-(--white)">
         <div className="w-[60vw] l:w-[20%] l:text-right l:text-[2.2rem]">
