@@ -154,7 +154,7 @@ export default function Home() {
       {/* Main Content */}
       <BabylonBackground />
       <Navbar />
-      <div className="w-full l:w-[80vw] l:ml-auto mx-2 overflow-hidden">
+      <div className="w-full l:w-[80vw] l:ml-auto overflow-hidden">
         <div id="home">
           <FadeInWhenVisible direction="down" delay={0.5}>
             <FirstPage />

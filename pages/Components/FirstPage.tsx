@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 
 const FirstPage = () => {
   return (
-    <div id="home" className="min-h-screen flex items-center justify-center overflow-hidden relative  px-6 py-20 l:py-0 l:px-12">
+    <div id="home" className="min-h-screen flex items-center justify-center overflow-hidden relative  px-6 py-20 pt-30 l:pt-0 l:py-0 l:px-12">
       
       {/* Decorative Background Glows - Responsive sizes */}
       <div className="absolute top-[-5%] left-[-5%] w-[200px] h-[200px] l:w-[400px] l:h-[400px] bg-(--lightgreen) rounded-full blur-[80px] l:blur-[120px] opacity-20" />
