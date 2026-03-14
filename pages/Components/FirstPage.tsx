@@ -13,7 +13,7 @@ const FirstPage = () => {
       <div className="absolute bottom-[5%] right-[-5%] w-[120px] h-[120px] sm:w-[140px] sm:h-[140px] mm:w-[160px] mm:h-[160px] lm:w-[200px] lm:h-[200px] t:w-[250px] t:h-[250px] l:w-[280px] l:h-[280px] ll:w-[300px] ll:h-[300px] k:w-[400px] k:h-[400px] my:w-[500px] my:h-[500px] bg-(--lightblue) rounded-full blur-[50px] sm:blur-[60px] mm:blur-[70px] lm:blur-[80px] t:blur-[90px] l:blur-[100px] ll:blur-[110px] k:blur-[130px] my:blur-[150px] opacity-20" />
 
       <div className="container mx-auto z-10">
-        <div className="flex flex-col l:flex-row-reverse items-center justify-center l:justify-between gap-6 sm:gap-8 mm:gap-8 lm:gap-10 t:gap-12 l:gap-16 ll:gap-20 k:gap-24 my:gap-28 sm:pt-12">
+        <div className="flex flex-col l:flex-row-reverse items-center justify-center l:justify-between gap-6 sm:gap-8 mm:gap-8 lm:gap-10 t:gap-12 l:gap-16 ll:gap-20 k:gap-24 my:gap-28 sm:pt-8">
           
           {/* Right Side: Image & Rotating Badge */}
           <div className="relative group w-full flex justify-center l:w-auto">
