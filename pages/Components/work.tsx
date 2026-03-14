@@ -58,10 +58,10 @@ const Work = () => {
     <div className=" min-h-screen py-4 overflow-x-hidden">
       {/* Header */}
       <div className="my-[2rem] text-[1.5rem] font-black text-left m-2 relative text-(--white)">
-        <div className="w-[60vw] l:w-[16%] l:text-right l:text-[2.2rem]">
+        <div className="w-[40vw] l:w-[16%] l:text-right l:text-[2.2rem]">
           Work .
         </div>
-        <div className="border-t absolute right-0 bottom-2 w-[40vw] l:w-[83%] border-(--gray)"></div>
+        <div className="border-t absolute right-0 bottom-2 w-[60vw] l:w-[83%] "></div>
       </div>
 
       <div className="l:ml-[3rem]">

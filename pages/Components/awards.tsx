@@ -64,7 +64,7 @@ const Awards = () => {
         <div className="w-[60vw] l:w-[26%] l:text-right l:text-[2.2rem]">
           Certificates .
         </div>
-        <div className="border-t absolute right-0 bottom-2 w-[40vw] l:w-[73%] border-(--gray)"></div>
+        <div className="border-t absolute right-0 bottom-2 w-[40vw] l:w-[73%]"></div>
       </div>
 
       {/* Grid Container */}

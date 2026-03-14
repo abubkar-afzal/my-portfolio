@@ -55,10 +55,10 @@ const Services = () => {
     <div className=" min-h-screen p-4 overflow-x-hidden">
       {/* Header Section - Removed -z-10 so it's visible */}
       <div className="my-[2rem] text-[1.5rem] font-black text-left m-2 relative text-(--white)">
-        <div className="w-[60vw] l:w-[20%] l:text-right l:text-[2.2rem]">
+        <div className="w-[55vw] l:w-[20%] l:text-right l:text-[2.2rem]">
           Services .
         </div>
-        <div className="border-t absolute right-0 bottom-2 w-[40vw] l:w-[79%] border-(--gray)"></div>
+        <div className="border-t absolute right-0 bottom-2 w-[45vw] l:w-[79%]"></div>
       </div>
 
       <div className="l:ml-[3rem]">

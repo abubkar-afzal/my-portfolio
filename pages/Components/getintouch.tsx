@@ -27,7 +27,7 @@ const GetInTouch = () => {
         <div className="w-[60vw] l:w-[27%] l:text-right l:text-[2.2rem]">
           Get In Touch .
         </div>
-        <div className="border-t absolute right-0 bottom-2 w-[40vw] l:w-[72%] border-(--gray)"></div>
+        <div className="border-t absolute right-0 bottom-2 w-[40vw] l:w-[72%] "></div>
       </div>
 
       <div className="l:ml-[3rem] flex-grow">
