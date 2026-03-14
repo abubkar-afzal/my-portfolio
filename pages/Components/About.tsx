@@ -9,7 +9,7 @@ const About =()=>{
         </div>
         <div className="m-2 l:text-left l:ml-[3.2rem]">
             <div className="font-semibold ">
-                Hi, my name is Hafiz Abubakar Afzal.
+                I am a passionate Full Stack Developer with over 2 years of experience in crafting dynamic and responsive web applications. My expertise lies in both frontend and backend development, allowing me to create seamless user experiences and robust server-side solutions. I thrive on solving complex problems and continuously learning new technologies to stay at the forefront of the ever-evolving tech landscape.
             </div>
         </div>
         <div className="p-4 break-after-auto space-y-4 l:text-left l:ml-[3rem]">
@@ -36,7 +36,7 @@ const About =()=>{
             <div className="flex space-x-2 font-mono">
                 <div className="w-[40%] l:w-[30%]">Experience</div>
                 <div className="l:w-[10%]">:</div>
-                <div className="w-[40%] l:w-[30%]">3+ years</div>
+                <div className="w-[40%] l:w-[30%]">2+ years</div>
             </div>
             <div className="flex space-x-2 font-mono">
                 <div className="w-[40%] l:w-[30%]">Full Stack Developer</div>
