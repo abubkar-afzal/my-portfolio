@@ -16,7 +16,7 @@ const DesignSkills = () => {
           </div>
 
       {/* Skills Grid - Fully Responsive */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 mm:grid-cols-2 lm:grid-cols-2 t:grid-cols-3 l:grid-cols-4 ll:grid-cols-5 gap-4 sm:gap-4 mm:gap-5 lm:gap-5 t:gap-6 l:gap-6 ll:gap-8 k:gap-10 my:gap-12 justify-items-center l:justify-items-start px-2 sm:px-2 mm:px-3 lm:px-3 t:px-4 l:pl-[5rem] ll:px-6 k:px-8 my:px-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 mm:grid-cols-2 lm:grid-cols-2 t:grid-cols-3 l:grid-cols-4 ll:grid-cols-5 gap-4 sm:gap-4 mm:gap-5 lm:gap-5 t:gap-6 l:gap-6 ll:gap-8 k:gap-10 my:gap-12 justify-items-center l:justify-items-start px-2 sm:px-2 t:px-4 l:pl-[4rem]">
         
         {/* Skill Card 1 - HTML/Tailwind */}
         <div className="text-(--white) flex w-full max-w-[12rem] sm:max-w-[12rem] mm:max-w-[13rem] lm:max-w-[14rem] t:max-w-[15rem] l:max-w-[16rem] ll:max-w-[18rem] k:max-w-[20rem] my:max-w-[22rem] bg-(--lightpink) rounded-[1.5rem] sm:rounded-[1.8rem] mm:rounded-[2rem] border border-(--pink) cursor-pointer hover:scale-[1.06] duration-[1s] p-2 sm:p-2 mm:p-2.5 lm:p-2.5 t:p-3 l:p-3 ll:p-4 k:p-5 my:p-6">
