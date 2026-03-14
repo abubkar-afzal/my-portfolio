@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import { BsEnvelopeAt, BsTelephoneOutbound, BsPerson, BsChatDots, BsCardText } from "react-icons/bs";
+import { BsEnvelopeAt, BsTelephoneOutbound, BsPerson, BsChatDots, BsCardText, BsWhatsapp } from "react-icons/bs";
 
 const GetInTouch = () => {
   const [formData, setFormData] = useState({
@@ -49,12 +49,12 @@ const GetInTouch = () => {
             </div>
           </Link>
 
-          <Link href="tel:+923270972423" className="group text-(--white) flex items-center space-x-4 m-2 p-4 border border-(--gray) rounded-xl hover:border-(--green) transition-all duration-500 flex-1">
+          <Link href="https://wa.me/923270972423" className="group text-(--white) flex items-center space-x-4 m-2 p-4 border border-(--gray) rounded-xl hover:border-(--green) transition-all duration-500 flex-1">
             <div className="bg-(--gray) p-3 rounded-lg group-hover:bg-(--green) group-hover:text-(--black) transition-all">
-              <BsTelephoneOutbound size={24} />
+              <BsWhatsapp size={24} />
             </div>
             <div>
-              <div className="font-thin text-[12px] opacity-60">Phone</div>
+              <div className="font-thin text-[12px] opacity-60">WhatsApp</div>
               <div className="font-black text-[14px]">+923270972423</div>
             </div>
           </Link>
