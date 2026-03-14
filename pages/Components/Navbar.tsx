@@ -79,7 +79,7 @@ const Navbar = () => {
       <div
         className={`fixed top-0 left-0 h-[100dvh] bg-(--gray) text-(--white) z-[999] transition-all duration-700 cubic-bezier(0.4, 0, 0.2, 1)
           ${show ? "translate-x-0" : "-translate-x-full l:translate-x-0"}
-          w-[85vw] sm:w-[400px] l:w-[20vw] flex flex-col border-r border-white/5 shadow-2xl`}
+          w-[95vw] l:w-[20vw] flex flex-col border-r border-white/5 shadow-2xl`}
       >
         {/* Top Profile Header */}
         <div className="relative pt-12 pb-8 px-8 flex flex-col items-center border-b border-white/5">
