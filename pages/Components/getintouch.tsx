@@ -49,7 +49,7 @@ const GetInTouch = () => {
             </div>
           </Link>
 
-          <Link href="https://wa.me/923270972423" className="group text-(--white) flex items-center space-x-4 m-2 p-4 border border-(--gray) rounded-xl hover:border-(--green) transition-all duration-500 flex-1">
+          <Link href="https://wa.me/923270972423" target="_blank" className="group text-(--white) flex items-center space-x-4 m-2 p-4 border border-(--gray) rounded-xl hover:border-(--green) transition-all duration-500 flex-1">
             <div className="bg-(--gray) p-3 rounded-lg group-hover:bg-(--green) group-hover:text-(--black) transition-all">
               <BsWhatsapp size={24} />
             </div>

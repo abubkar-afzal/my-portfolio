@@ -14,6 +14,7 @@ import {
   FaServicestack,
   FaFileContract,
 } from "react-icons/fa6";
+import Link from "next/link";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -103,11 +104,17 @@ const Navbar = () => {
 
           {/* Minimal Social Links */}
           <div className="flex gap-4 mt-6">
-            {[FaLinkedin, FaInstagram, FaFacebook, FaWhatsapp].map((Icon, i) => (
-              <a key={i} href="#" className="text-white/40 hover:text-(--mahroon) transition-colors transform hover:scale-110">
-                <Icon size={18} />
-              </a>
-            ))}
+              <Link  href={`https://www.linkedin.com/in/hafiz-abubakar-afzal-b77a46354/`} target="_blank" className="text-white/40 hover:text-(--mahroon) transition-colors transform hover:scale-110">
+                <FaLinkedin size={18} />
+              </Link>
+              <Link  href={`https://www.instagram.com/ar_codes504/`} target="_blank" className="text-white/40 hover:text-(--mahroon) transition-colors transform hover:scale-110">
+                <FaInstagram size={18} />
+              </Link>
+              
+              <Link  href={`https://wa.me/923270972423`} target="_blank" className="text-white/40 hover:text-(--mahroon) transition-colors transform hover:scale-110">
+                <FaWhatsapp size={18} />
+              </Link>
+          
           </div>
         </div>
 
