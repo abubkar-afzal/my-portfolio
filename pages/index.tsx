@@ -37,7 +37,7 @@ export default function Home() {
     description: "Welcome to my professional portfolio. I'm a passionate developer and designer creating amazing digital experiences. Explore my work in coding, design, and creative projects.",
     keywords: "portfolio, developer, designer, web development, UI/UX, coding, creative, professional, freelance",
     author: "Hafiz Abubakar Afzal",
-    siteUrl: "https://hafizabubakarafzal.vercel.app/",
+    siteUrl: "https://hafizabubakarafzal.vercel.app",
     twitterHandle: "@arcodes504",
     imageUrl: "/og-image.png",
     imageAlt: "Hafiz Abubakar Afzal - Portfolio Profile Picture"
@@ -68,9 +68,9 @@ export default function Home() {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content={siteData.imageAlt} />
+        <meta property="og:image:type" content="image/png" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="Hafiz Abubakar Afzal Portfolio" />
-        <meta property="og:image:type" content="image/png" />
         
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -81,11 +81,8 @@ export default function Home() {
         <meta name="twitter:image" content={`${siteData.siteUrl}${siteData.imageUrl}`} />
         <meta name="twitter:image:alt" content={siteData.imageAlt} />
         
-        {/* WhatsApp specific */}
+        {/* WhatsApp specific meta tags */}
         <meta name="format-detection" content="telephone=no" />
-        <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-        <meta httpEquiv="Pragma" content="no-cache" />
-        <meta httpEquiv="Expires" content="0" />
         
         {/* Additional SEO */}
         <meta name="robots" content="index, follow" />
@@ -94,6 +91,10 @@ export default function Home() {
         
         {/* Canonical URL */}
         <link rel="canonical" href={siteData.siteUrl} />
+        
+        {/* Preconnect for performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         
         {/* Structured Data */}
         <script
