@@ -55,9 +55,9 @@ export default function Home() {
         <meta charSet="UTF-8" />
         
         {/* Favicon */}
-        <link rel="icon" type="image/png" sizes="16x16" href="/me.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/me.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/me.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/og-image.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/og-image.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/og-image.png" />
         
         {/* Open Graph / Facebook Meta Tags */}
         <meta property="og:type" content="website" />
