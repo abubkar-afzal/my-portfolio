@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+Sitemap: https://hafizabubakarafzal.vercel.app/sitemap.xml
+Host: https://hafizabubakarafzal.vercel.app/

@@ -91,7 +91,7 @@ const FirstPage = () => {
             {/* Action Buttons - Fully responsive */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-3 mm:gap-4 lm:gap-4 t:gap-5 l:gap-6 justify-center l:justify-start pt-4 sm:pt-4 mm:pt-5 lm:pt-5 t:pt-6 l:pt-6">
               <button 
-                className="relative overflow-hidden w-full sm:w-[10rem] mm:w-[11rem] lm:w-[11rem] t:w-[12rem] l:w-[12rem] ll:w-[14rem] k:w-[16rem] my:w-[18rem] py-2.5 sm:py-2.5 mm:py-3 lm:py-3 t:py-3.5 l:py-3.5 ll:py-4 k:py-5 my:py-6 rounded-lg sm:rounded-lg mm:rounded-xl lm:rounded-xl text-(--white) hover:text-(--black) border border-(--yellow) transition-all duration-500 group" 
+                className="relative overflow-hidden w-full sm:w-[10rem] mm:w-[11rem] lm:w-[11rem] t:w-[12rem] l:w-[12rem] ll:w-[14rem] k:w-[16rem] my:w-[18rem] py-2.5 sm:py-2.5 mm:py-3 lm:py-3 t:py-3.5 l:py-3.5 ll:py-4 k:py-5 my:py-6 rounded-lg sm:rounded-lg mm:rounded-xl lm:rounded-xl text-(--white) hover:text-(--black) border border-(--yellow) transition-all duration-500 group cursor-pointer" 
                 onClick={() => document.getElementById("work")?.scrollIntoView({ behavior: "smooth" })}
               >
                 <span className="relative z-10 font-bold uppercase tracking-wider text-[0.7rem] sm:text-[0.7rem] mm:text-[0.75rem] lm:text-[0.8rem] t:text-[0.85rem] l:text-[0.9rem] ll:text-[1rem] k:text-[1.2rem] my:text-[1.4rem]">View Work</span>
@@ -99,7 +99,7 @@ const FirstPage = () => {
               </button>
 
               <button 
-                className="relative overflow-hidden w-full sm:w-[10rem] mm:w-[11rem] lm:w-[11rem] t:w-[12rem] l:w-[12rem] ll:w-[14rem] k:w-[16rem] my:w-[18rem] py-2.5 sm:py-2.5 mm:py-3 lm:py-3 t:py-3.5 l:py-3.5 ll:py-4 k:py-5 my:py-6 rounded-lg sm:rounded-lg mm:rounded-xl lm:rounded-xl text-(--white) hover:text-(--black) border border-(--green) transition-all duration-500 group" 
+                className="relative overflow-hidden w-full sm:w-[10rem] mm:w-[11rem] lm:w-[11rem] t:w-[12rem] l:w-[12rem] ll:w-[14rem] k:w-[16rem] my:w-[18rem] py-2.5 sm:py-2.5 mm:py-3 lm:py-3 t:py-3.5 l:py-3.5 ll:py-4 k:py-5 my:py-6 rounded-lg sm:rounded-lg mm:rounded-xl lm:rounded-xl text-(--white) hover:text-(--black) border border-(--green) transition-all duration-500 group cursor-pointer" 
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
               >
                 <span className="relative z-10 font-bold uppercase tracking-wider text-[0.7rem] sm:text-[0.7rem] mm:text-[0.75rem] lm:text-[0.8rem] t:text-[0.85rem] l:text-[0.9rem] ll:text-[1rem] k:text-[1.2rem] my:text-[1.4rem]">Contact Me</span>

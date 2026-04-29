@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import { BsEnvelopeAt, BsTelephoneOutbound, BsPerson, BsChatDots, BsCardText, BsWhatsapp } from "react-icons/bs";
+import { BsEnvelopeAt, BsTelephoneOutbound, BsPerson, BsChatDots, BsCardText, BsWhatsapp, BsCheckCircle } from "react-icons/bs";
 
 const GetInTouch = () => {
   const [formData, setFormData] = useState({
@@ -10,10 +10,64 @@ const GetInTouch = () => {
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form Submitted:", formData);
-    alert("Thanks for reaching out! This is where your logic (EmailJS, Formspree, etc.) would go.");
+    
+    // Validate form
+    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+      alert("Please fill in all fields before sending.");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    // Format the message for WhatsApp
+    const whatsappMessage = `
+*New Contact Form Submission*
+━━━━━━━━━━━━━━━━━━━━━
+
+*👤 Name:* 
+${formData.name}
+
+*📧 Email:* 
+${formData.email}
+
+*📋 Subject:* 
+${formData.subject}
+
+*💬 Message:* 
+${formData.message}
+
+━━━━━━━━━━━━━━━━━━━━━
+*Sent from Portfolio Website*
+📅 ${new Date().toLocaleString()}
+    `.trim();
+
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    const phoneNumber = "923270972423";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    
+    // Open WhatsApp in new tab
+    window.open(whatsappUrl, "_blank");
+    
+    // Show success message
+    setShowSuccess(true);
+    setIsSubmitting(false);
+    
+    // Reset form after 2 seconds
+    setTimeout(() => {
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+      setShowSuccess(false);
+    }, 3000);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -21,13 +75,13 @@ const GetInTouch = () => {
   };
 
   return (
-    <div className=" min-h-screen flex flex-col justify-between overflow-x-hidden">
+    <div className="min-h-screen flex flex-col justify-between overflow-x-hidden">
       {/* Header */}
       <div className="my-[2rem] text-[1.5rem] font-black text-left m-2 relative text-(--white)">
         <div className="w-[60vw] l:w-[27%] l:text-right l:text-[2.2rem]">
           Get In Touch .
         </div>
-        <div className="border-t absolute right-0 bottom-2 w-[40vw] l:w-[72%] "></div>
+        <div className="border-t absolute right-0 bottom-2 w-[40vw] l:w-[72%]"></div>
       </div>
 
       <div className="l:ml-[3rem] flex-grow">
@@ -69,6 +123,7 @@ const GetInTouch = () => {
             <input 
               type="text" 
               name="name"
+              value={formData.name}
               required
               onChange={handleChange}
               className="w-full bg-transparent border-b border-(--gray) focus:border-(--blue) outline-none p-2 font-thin transition-all" 
@@ -83,6 +138,7 @@ const GetInTouch = () => {
             <input 
               type="email" 
               name="email"
+              value={formData.email}
               required
               onChange={handleChange}
               className="w-full bg-transparent border-b border-(--gray) focus:border-(--pink) outline-none p-2 font-thin transition-all" 
@@ -97,6 +153,7 @@ const GetInTouch = () => {
             <input 
               type="text" 
               name="subject"
+              value={formData.subject}
               required
               onChange={handleChange}
               className="w-full bg-transparent border-b border-(--gray) focus:border-(--yellow) outline-none p-2 font-thin transition-all" 
@@ -110,6 +167,7 @@ const GetInTouch = () => {
             </div>
             <textarea 
               name="message"
+              value={formData.message}
               required
               onChange={handleChange}
               rows={1}
@@ -118,14 +176,25 @@ const GetInTouch = () => {
             />
           </div>
 
-          <div className="l:col-span-2 text-center my-8">
+          <div className="l:col-span-2 text-center my-8 relative">
             <button 
               type="submit"
-              className="relative overflow-hidden w-[12rem] p-3 rounded-[1rem] border border-(--blue) cursor-pointer transition-colors duration-500 group hover:text-(--black)"
+              disabled={isSubmitting}
+              className="relative overflow-hidden w-[12rem] p-3 rounded-[1rem] border border-(--blue) cursor-pointer transition-colors duration-500 group hover:text-(--black) disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              <span className="relative z-10 font-bold uppercase tracking-widest text-[14px]">Send Message</span>
+              <span className="relative z-10 font-bold uppercase tracking-widest text-[14px] flex items-center justify-center gap-2">
+                {isSubmitting ? "Sending..." : showSuccess ? "Sent!" : "Send Message"}
+                {showSuccess && <BsCheckCircle size={16} />}
+              </span>
               <span className="absolute inset-0 bg-(--blue) translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0"></span>
             </button>
+            
+            {/* Success Message Popup */}
+            {showSuccess && (
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-medium animate-fadeIn whitespace-nowrap">
+                Message sent! Redirecting to WhatsApp...
+              </div>
+            )}
           </div>
         </form>
 
@@ -134,6 +203,24 @@ const GetInTouch = () => {
           &copy; 2026 | All Rights Reserved by <b className="text-(--blue)">Hafiz Abubakar Afzal</b>
         </div>
       </div>
+
+      {/* Add animation styles */}
+      <style jsx>{`
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateX(-50%) translateY(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+          }
+        }
+        
+        .animate-fadeIn {
+          animation: fadeIn 0.3s ease-out;
+        }
+      `}</style>
     </div>
   );
 };

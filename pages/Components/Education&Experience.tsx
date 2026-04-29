@@ -79,6 +79,23 @@ const Education_Experience = () => {
               </div>
             </div>
           </div>
+           <div className="flex l:ml-[3rem] l:mr-[1rem] group cursor-pointer">
+            <div className="w-[5%] mr-[5%] h-[8rem] flex flex-col justify-center ">
+              <div className=" ml-1 w-[0.8rem] h-[0.8rem] rounded-full border border-(--white) relative">
+                <div className="absolute w-[0.4rem] h-[0.4rem] m-[2px] rounded-full bg-(--mahroon)"></div>
+              </div>
+              <div className="w-[1%] ml-[10px] h-[8rem]  border-r"></div>
+            </div>
+            <div className="w-[90%]">
+              <div className="font-bold group-hover:text-(--mahroon) duration-[1s]">Social Media Manager</div>
+              <div className="font-thin">
+                From July 2025 To Feburary 2026
+              </div>
+              <div className="my-[1.5rem] font-thin">
+                Laiba Jewellery Al Nazir Hotel Fawara Chowck Shah Allam Market Lahore.
+              </div>
+            </div>
+          </div>
           <div className="flex l:ml-[3rem] l:mr-[1rem] group cursor-pointer">
             <div className="w-[5%] mr-[5%] h-[8rem] flex flex-col justify-center ">
               <div className=" ml-1 w-[0.8rem] h-[0.8rem] rounded-full border border-(--white) relative">

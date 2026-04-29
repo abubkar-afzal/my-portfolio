@@ -140,25 +140,46 @@ const Navbar = () => {
         </nav>
 
         {/* Action Area */}
-        <div className="p-6 mt-auto">
-          <a
-            href="../../CV.pdf"
-            download
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            className="group relative w-full h-14 rounded-2xl overflow-hidden bg-white/5 border border-white/10 flex items-center justify-center transition-all active:scale-95"
-          >
-            <span className="absolute inset-0 bg-gradient-to-r from-(--mahroon) to-red-800 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
-            
-            <div className="relative z-10 flex items-center gap-3">
-               <FaDownload className={`transition-all duration-500 ${isHovered ? 'opacity-0 -translate-y-2' : 'opacity-100'}`} />
-               <span className="text-xs font-black uppercase tracking-widest">
-                 {isHovered ? "Ready to Download" : "Get My Resume"}
-               </span>
-               <MdFileDownload className={`absolute right-[-24px] transition-all duration-500 ${isHovered ? 'opacity-100 translate-x-[-24px]' : 'opacity-0'}`} />
-            </div>
-          </a>
-        </div>
+        {/* Action Area */}
+<div className="p-6 mt-auto">
+  <a
+    href="../../CV.pdf"
+    download
+    onMouseEnter={() => setIsHovered(true)}
+    onMouseLeave={() => setIsHovered(false)}
+    className="group relative w-full h-12 md:h-14 rounded-xl md:rounded-2xl overflow-hidden bg-white/5 border border-white/10 flex items-center justify-center transition-all duration-300 hover:scale-[1.02] active:scale-95 cursor-pointer"
+  >
+    {/* Background Animation */}
+    <span className="absolute inset-0 bg-gradient-to-r from-(--mahroon) to-(--lightmahroon) w-full h-full transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)]" />
+    
+    {/* Content Container */}
+    <div className="relative z-10 flex items-center justify-center gap-2 md:gap-3 px-4">
+      {/* Icon that transforms */}
+      <div className="relative">
+        <FaDownload 
+          className={`text-white text-sm md:text-base transition-all duration-500 ${
+            isHovered ? 'opacity-0 scale-0' : 'opacity-100 scale-100'
+          }`} 
+        />
+        <MdFileDownload 
+          className={`absolute top-0 left-0 text-white text-sm md:text-base transition-all duration-500 ${
+            isHovered ? 'opacity-100 scale-100' : 'opacity-0 scale-150'
+          }`} 
+        />
+      </div>
+      
+      {/* Text */}
+      <span className="text-[11px] md:text-xs font-black uppercase tracking-[0.15em] md:tracking-widest text-white whitespace-nowrap">
+        {isHovered ? "Ready to Download" : "Get My Resume"}
+      </span>
+    </div>
+    
+    {/* Border Glow on Hover */}
+    <span className={`absolute inset-0 rounded-xl md:rounded-2xl border border-white/0 transition-all duration-500 ${
+      isHovered ? 'border-white/30 shadow-[0_0_20px_rgba(238,66,66,0.3)]' : ''
+    }`} />
+  </a>
+</div>
       </div>
     </>
   );
