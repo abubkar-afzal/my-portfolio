@@ -5,10 +5,18 @@ import imgElectronics from "../../public/electronic.png";
 import imgFashion from "../../public/fashion.png";
 import imgSurvey from "../../public/survey.png";
 import imgPortfolio from "../../public/portfolio.png";
+import imgProperty from "../../public/property.png";
 
 const Work = () => {
   const projectData = [
     {
+      name: "PropertyPro",
+      description: "An online property dealer page for buy and rent house.",
+      url: "https://property-abubkar-afzals-projects.vercel.app/",
+      image: imgProperty, 
+      accent: "var(--mahroon)",
+      btnColor: "var(--green)",
+    },{
       name: "Laiba Jewellery",
       description: "An online jewellery sellers store with luxury branding.",
       url: "https://laibajewellery.vercel.app/",
